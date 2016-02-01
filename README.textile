@@ -1,0 +1,19 @@
+<p>This library scrapes twitter efficient by using max_id and since_id instead of using the old pages. For user timeline it scrapes 3200 tweets. 
+</p>
+<p>
+You only need two lines of code to scrape a user timeline:
+</p>
+<p>
+<code>
+from scraperwiki import swimport
+swimport('twitter_scrape').user_timeline(<username>[,<verbose>])
+</code>
+</p>
+<p>
+You can also use this library to scrape the statuses of a list, but this will only scrape around 2 months of history (?):
+</p>
+<p>
+<code>
+swimport('twitter_scrape').statuses(<username>,<list>[,<verbose>])
+</code>
+</p>
